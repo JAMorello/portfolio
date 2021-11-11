@@ -10,10 +10,10 @@ function App() {
     <div className="bg-home h-screen bg-no-repeat bg-cover">
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/acerca" element={<Acerca />} />
-        <Route exact path="/proyectos" element={<Proyectos />} />
-        <Route exact path="/contacto" element={<Contacto />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/acerca" element={<Acerca />} />
+        <Route path="/proyectos" element={<Proyectos />} />
+        <Route path="/contacto" element={<Contacto />} />
       </Routes>
     </div>
   );
