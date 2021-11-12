@@ -8,7 +8,7 @@ import Contacto from "./pages/Contacto";
 
 const App = () => {
   return (
-    <div className="bg-home h-screen bg-no-repeat bg-cover bg-fixed">
+    <div style={{ height: "80%" }}>
       <Navbar />
       <BgParticles />
       <Routes>
