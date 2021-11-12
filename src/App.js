@@ -1,14 +1,16 @@
 import { Routes, Route } from "react-router-dom";
+import BgParticles from "./components/BgParticles";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Acerca from "./pages/Acerca";
 import Proyectos from "./pages/Proyectos";
 import Contacto from "./pages/Contacto";
 
-function App() {
+const App = () => {
   return (
-    <div className="bg-home h-screen bg-no-repeat bg-cover">
+    <div className="bg-home h-screen bg-no-repeat bg-cover bg-fixed">
       <Navbar />
+      <BgParticles />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/acerca" element={<Acerca />} />
@@ -17,6 +19,6 @@ function App() {
       </Routes>
     </div>
   );
-}
+};
 
 export default App;

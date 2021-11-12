@@ -25,7 +25,7 @@ const BgParticles = () => {
             random: true,
             anim: {
               enable: false,
-              speed: 3,
+              speed: 1,
               size_min: 0,
               sync: true,
             },
