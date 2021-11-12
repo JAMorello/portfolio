@@ -1,4 +1,5 @@
 import CV from "../assets/morello-juan-agustin-cv.pdf";
+import FileIcon from "./FileIcon";
 
 function BotonCV() {
   return (
@@ -6,9 +7,14 @@ function BotonCV() {
       href={CV}
       target="_blank"
       rel="noopener noreferrer"
-      className="mt-4 py-2 px-4 bg-yellow-500 hover:bg-red-500 z-50 text-xl rounded"
+      className="mt-4 py-2 px-4 z-50 text-xl border-r-4 border-b-4 bg-yellow-500 border-yellow-600 hover:bg-red-500 hover:border-red-600 rounded"
     >
-      Ver CV
+      <div className="flex text-gray-900">
+        <div className="pr-1">
+          <FileIcon />
+        </div>
+        <p className="align-top	">Ver CV</p>
+      </div>
     </a>
   );
 }
