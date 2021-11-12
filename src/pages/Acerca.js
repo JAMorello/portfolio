@@ -20,10 +20,10 @@ function Acerca() {
 
   return (
     <div className="flex justify-center items-center mt-10">
-      <div className="w-full sm:w-2/3	p-6 grid grid-cols-1 md:grid-cols-3 bg-gray-200 border-2 rounded shadow-lg">
+      <div className="w-full sm:w-2/3	p-6 grid grid-cols-1 md:grid-cols-3 bg-blue-100 border-2 rounded shadow-lg">
         <ProfileImg />
         <div className="col-span-1 md:col-span-2">
-          <p className="text-xl font-bold text-center text-blue-500 pb-2">
+          <p className="text-xl font-bold text-center text-blue-600 pb-2">
             Mi recorrido como...
           </p>
           <div className="flex flex-col pl-6 mt-10 md:mt-0">
