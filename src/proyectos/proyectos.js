@@ -33,6 +33,7 @@ const proyectos = [
           href="https://www.alkemy.org/"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-blue-600"
         >
           Alkemy Labs
         </a>
@@ -44,6 +45,7 @@ const proyectos = [
           href="https://superheroapi.com/"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-blue-600"
         >
           SuperHero API
         </a>
@@ -72,7 +74,12 @@ const proyectos = [
       <p>
         La aplicación web fue creada luego de participar en un desafío pago
         ofrecido por{" "}
-        <a href="https://scale.com/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://scale.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600"
+        >
           Scale AI
         </a>{" "}
         , quienes estaban en busca de postulantes para un proyecto importante.
@@ -128,7 +135,7 @@ const proyectos = [
     codeLink: "https://github.com/JAMorello/data-science-exercises",
   },
   {
-    name: "004 : Hard Working People",
+    name: "004: Hard Working People",
     img: proyecto004,
     extraImgs: [HWP001, HWP002],
     text: "Una aplicación web cómica sobre una empresa ficticia. Hecha con React y Chakra-UI.",
@@ -163,7 +170,7 @@ const proyectos = [
     codeLink: "https://github.com/JAMorello/people-app",
   },
   {
-    name: "005 : TO-DO List App",
+    name: "005: TO-DO List App",
     img: proyecto005,
     extraImgs: [TDA001],
     text: "Una aplicación web donde que implementa un CRUD, opciones de búsqueda y filtro, y night mode.",
@@ -183,7 +190,7 @@ const proyectos = [
     codeLink: "https://github.com/JAMorello/todo-app",
   },
   {
-    name: "006 : H+ Bot",
+    name: "006: H+ Bot",
     img: proyecto006,
     extraImgs: [HPB001, HPB002],
     text: "Un bot de twitter que sigue a pensadores y asociaciones transhumanistas y twitea sobre asuntos relacionados con el futuro.",
@@ -202,7 +209,7 @@ const proyectos = [
         al acceder a las API de Twitter, The New York Times, y Reddit, así como
         a la página web de la wiki H+Pedia. Almacena los datos en una base de
         datos relacional. Actualmente sigue a 57 usuarios y tiene alrededor de
-        150 followers.
+        230 followers.
       </p>
     ),
     technologies: [
@@ -217,7 +224,7 @@ const proyectos = [
     codeLink: "https://github.com/JAMorello/HPlus_Bot",
   },
   {
-    name: "007 : Dungeon of the Silver Key",
+    name: "007: Dungeon of the Silver Key",
     img: proyecto007,
     extraImgs: [DSK001, DSK002, DSK003],
     text: "Un dungeon crawler básico basado en texto. Inspirado en H.P. Lovecraft y los juegos de Ficción Interactiva.",
@@ -238,6 +245,7 @@ const proyectos = [
           href="https://github.com/Mili-NT/Dungeon-Of-The-Silver-Key"
           target="_blank"
           rel="noopener noreferrer"
+          className="text-blue-600"
         >
           @Mili-NT
         </a>
