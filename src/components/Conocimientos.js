@@ -17,62 +17,64 @@ import {
 } from "react-icons/si";
 
 const Conocimientos = () => {
+  const skillStyle = "w-10 h-10 lg:w-16 lg:h-16 text-gray-400";
+
   const skills = [
     {
       name: "HTML 5",
-      icon: <SiHtml5 className="w-16 h-16 text-gray-400" />,
+      icon: <SiHtml5 className={skillStyle} />,
     },
     {
       name: "CSS 3",
-      icon: <SiCss3 className="w-16 h-16 text-gray-400" />,
+      icon: <SiCss3 className={skillStyle} />,
     },
     {
       name: "JavaScript",
-      icon: <SiJavascript className="w-16 h-16 text-gray-400" />,
+      icon: <SiJavascript className={skillStyle} />,
     },
     {
       name: "Node.js",
-      icon: <SiNodedotjs className="w-16 h-16 text-gray-400" />,
+      icon: <SiNodedotjs className={skillStyle} />,
     },
     {
       name: "React.js",
-      icon: <SiReact className="w-16 h-16 text-gray-400" />,
+      icon: <SiReact className={skillStyle} />,
     },
     {
       name: "Chakra UI",
-      icon: <SiChakraui className="w-16 h-16 text-gray-400" />,
+      icon: <SiChakraui className={skillStyle} />,
     },
     {
       name: "Bootstrap 5",
-      icon: <SiBootstrap className="w-16 h-16 text-gray-400" />,
+      icon: <SiBootstrap className={skillStyle} />,
     },
     {
       name: "Tailwind CSS",
-      icon: <SiTailwindcss className="w-16 h-16 text-gray-400" />,
+      icon: <SiTailwindcss className={skillStyle} />,
     },
     {
       name: "Python",
-      icon: <SiPython className="w-16 h-16 text-gray-400" />,
+      icon: <SiPython className={skillStyle} />,
     },
     {
       name: "R",
-      icon: <SiR className="w-16 h-16 text-gray-400" />,
+      icon: <SiR className={skillStyle} />,
     },
     {
       name: "MySql",
-      icon: <SiMysql className="w-16 h-16 text-gray-400" />,
+      icon: <SiMysql className={skillStyle} />,
     },
     {
       name: "PostgreSql",
-      icon: <SiPostgresql className="w-16 h-16 text-gray-400" />,
+      icon: <SiPostgresql className={skillStyle} />,
     },
     {
       name: "Git",
-      icon: <SiGit className="w-16 h-16 text-gray-400" />,
+      icon: <SiGit className={skillStyle} />,
     },
     {
       name: "Scrum",
-      icon: <SiScrumalliance className="w-16 h-16 text-gray-400" />,
+      icon: <SiScrumalliance className={skillStyle} />,
     },
   ];
 
