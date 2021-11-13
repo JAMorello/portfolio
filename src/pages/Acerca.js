@@ -19,7 +19,7 @@ function Acerca() {
   };
 
   return (
-    <div className="flex justify-center items-center mt-10">
+    <div className="flex justify-center items-center my-10 ">
       <div className="w-full sm:w-2/3	p-6 grid grid-cols-1 md:grid-cols-3 bg-blue-100 border-2 rounded shadow-lg">
         <ProfileImg />
         <div className="col-span-1 md:col-span-2">
