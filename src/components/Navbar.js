@@ -18,7 +18,7 @@ function Navbar() {
           02 : Proyectos
         </Link>
         <Divider />
-        <Link to="/contact" className="hover:text-gray-200">
+        <Link to="/contact0" className="hover:text-gray-200">
           03 : Contacto
         </Link>
       </div>
