@@ -13,7 +13,7 @@ const Proyectos = () => {
         Proyectos
       </h2>
       <div
-        className="flex gap-5 flex-wrap justify-center"
+        className="flex gap-0 gap-y-5 sm:gap-y-5 sm:gap-5 flex-wrap justify-center"
         style={{ width: "90%" }}
       >
         {proyectos.map((e) => (
