@@ -1,4 +1,5 @@
 import proyecto001 from "../assets/proyecto001/proyecto001.jpg";
+import portada001 from "../assets/proyecto001/portada001.jpg";
 import SHA001 from "../assets/proyecto001/SHA001.jpg";
 import SHA002 from "../assets/proyecto001/SHA002.jpg";
 import SHA003 from "../assets/proyecto001/SHA003.jpg";
@@ -23,7 +24,12 @@ const proyectos = [
   {
     name: "001: Superheroes App",
     img: proyecto001,
-    extraImgs: [SHA001, SHA002, SHA003],
+    extraImgs: [
+      { img: portada001, caption: null },
+      { img: SHA001, caption: "Página de Login" },
+      { img: SHA002, caption: "Héroes y sus botones con distintos status" },
+      { img: SHA003, caption: "Carta y detalle de los miembros del equipo" },
+    ],
     quote: null,
     text: "Una aplicación web aplicación web responsive para armar un equipo de superheroes. Se hace validación de formularios, peticiones HTTP a API, etc. Para Alkemy Labs (Arg.).",
     extendedText: (
@@ -67,7 +73,17 @@ const proyectos = [
   {
     name: "002: Belstaff App",
     img: proyecto002,
-    extraImgs: [BEL001, BEL002],
+    extraImgs: [
+      { img: proyecto002, caption: null },
+      {
+        img: BEL001,
+        caption: "Listado de productos y formulario de selección",
+      },
+      {
+        img: BEL002,
+        caption: "Información de variantes de productos en un modal",
+      },
+    ],
     text: "Una aplicación web donde se visualizan productos. Hecho a partir de un challenge sobre web scraping, en equipo, para Scale AI (EE.UU.).",
     quote: null,
     extendedText: (
@@ -98,7 +114,7 @@ const proyectos = [
   {
     name: "003: Data Science",
     img: proyecto003,
-    extraImgs: [],
+    extraImgs: [{ img: proyecto003, caption: null }],
     text: "A lo largo del tiempo iré aquí agregando pequeños proyectos/ejercicios relacionados con Data Science, Machine Learning, y demás.",
     quote: (
       <blockquote>
@@ -137,7 +153,11 @@ const proyectos = [
   {
     name: "004: Hard Working People",
     img: proyecto004,
-    extraImgs: [HWP001, HWP002],
+    extraImgs: [
+      { img: proyecto004, caption: null },
+      { img: HWP001, caption: "¡Conoce nuestro plantel!" },
+      { img: HWP002, caption: "¡Forma un equipo!" },
+    ],
     text: "Una aplicación web cómica sobre una empresa ficticia. Hecha con React y Chakra-UI.",
     quote: (
       <blockquote>
@@ -172,7 +192,10 @@ const proyectos = [
   {
     name: "005: TO-DO List App",
     img: proyecto005,
-    extraImgs: [TDA001],
+    extraImgs: [
+      { img: proyecto005, caption: null },
+      { img: TDA001, caption: "Aplicación web con múltiples funcionalidades" },
+    ],
     text: "Una aplicación web donde que implementa un CRUD, opciones de búsqueda y filtro, y night mode.",
     quote: null,
     extendedText: (
@@ -192,7 +215,11 @@ const proyectos = [
   {
     name: "006: H+ Bot",
     img: proyecto006,
-    extraImgs: [HPB001, HPB002],
+    extraImgs: [
+      { img: proyecto006, caption: null },
+      { img: HPB001, caption: "Perfil de twitter" },
+      { img: HPB002, caption: null },
+    ],
     text: "Un bot de twitter que sigue a pensadores y asociaciones transhumanistas y twitea sobre asuntos relacionados con el futuro.",
     quote: (
       <blockquote>
@@ -226,7 +253,12 @@ const proyectos = [
   {
     name: "007: Dungeon of the Silver Key",
     img: proyecto007,
-    extraImgs: [DSK001, DSK002, DSK003],
+    extraImgs: [
+      { img: proyecto007, caption: null },
+      { img: DSK001, caption: null },
+      { img: DSK002, caption: "Combate contra enemigos." },
+      { img: DSK003, caption: "Incluye un sistema de mapeo e inventario." },
+    ],
     text: "Un dungeon crawler básico basado en texto. Inspirado en H.P. Lovecraft y los juegos de Ficción Interactiva.",
     quote: (
       <blockquote>
