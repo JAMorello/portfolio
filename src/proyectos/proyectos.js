@@ -4,18 +4,25 @@ import SHA001 from "../assets/proyecto001/SHA001.jpg";
 import SHA002 from "../assets/proyecto001/SHA002.jpg";
 import SHA003 from "../assets/proyecto001/SHA003.jpg";
 import proyecto002 from "../assets/proyecto002/proyecto002.jpg";
+import portada002 from "../assets/proyecto002/portada002.jpg";
 import BEL001 from "../assets/proyecto002/BEL001.jpg";
 import BEL002 from "../assets/proyecto002/BEL002.jpg";
 import proyecto003 from "../assets/proyecto003/proyecto003.jpg";
+import portada003 from "../assets/proyecto003/portada003.jpg";
 import proyecto004 from "../assets/proyecto004/proyecto004.jpg";
+import portada004 from "../assets/proyecto004/portada004.jpg";
 import HWP001 from "../assets/proyecto004/HWP001.jpg";
 import HWP002 from "../assets/proyecto004/HWP002.jpg";
+import HWP003 from "../assets/proyecto004/HWP003.jpg";
 import proyecto005 from "../assets/proyecto005/proyecto005.jpg";
+import portada005 from "../assets/proyecto005/portada005.jpg";
 import TDA001 from "../assets/proyecto005/TDA001.jpg";
 import proyecto006 from "../assets/proyecto006/proyecto006.jpg";
+import portada006 from "../assets/proyecto006/portada006.jpg";
 import HPB001 from "../assets/proyecto006/HPB001.jpg";
 import HPB002 from "../assets/proyecto006/HPB002.jpg";
 import proyecto007 from "../assets/proyecto007/proyecto007.jpg";
+import portada007 from "../assets/proyecto007/portada007.jpg";
 import DSK001 from "../assets/proyecto007/DSK001.jpg";
 import DSK002 from "../assets/proyecto007/DSK002.jpg";
 import DSK003 from "../assets/proyecto007/DSK003.jpg";
@@ -25,7 +32,7 @@ const proyectos = [
     name: "001: Superheroes App",
     img: proyecto001,
     extraImgs: [
-      { img: portada001, caption: null },
+      { img: portada001, caption: "SuperHeroes App" },
       { img: SHA001, caption: "Página de Login" },
       { img: SHA002, caption: "Héroes y sus botones con distintos status" },
       { img: SHA003, caption: "Carta y detalle de los miembros del equipo" },
@@ -74,7 +81,7 @@ const proyectos = [
     name: "002: Belstaff App",
     img: proyecto002,
     extraImgs: [
-      { img: proyecto002, caption: null },
+      { img: portada002, caption: "Belstaff App" },
       {
         img: BEL001,
         caption: "Listado de productos y formulario de selección",
@@ -114,7 +121,9 @@ const proyectos = [
   {
     name: "003: Data Science",
     img: proyecto003,
-    extraImgs: [{ img: proyecto003, caption: null }],
+    extraImgs: [
+      { img: portada003, caption: "Data Science, Machine Learning, y más..." },
+    ],
     text: "A lo largo del tiempo iré aquí agregando pequeños proyectos/ejercicios relacionados con Data Science, Machine Learning, y demás.",
     quote: (
       <blockquote>
@@ -154,9 +163,10 @@ const proyectos = [
     name: "004: Hard Working People",
     img: proyecto004,
     extraImgs: [
-      { img: proyecto004, caption: null },
+      { img: portada004, caption: "HWP: Empresa ficticia cómica" },
       { img: HWP001, caption: "¡Conoce nuestro plantel!" },
       { img: HWP002, caption: "¡Forma un equipo!" },
+      { img: HWP003, caption: "Revisa los detalles!" },
     ],
     text: "Una aplicación web cómica sobre una empresa ficticia. Hecha con React y Chakra-UI.",
     quote: (
@@ -193,7 +203,7 @@ const proyectos = [
     name: "005: TO-DO List App",
     img: proyecto005,
     extraImgs: [
-      { img: proyecto005, caption: null },
+      { img: portada005, caption: "TO-DO List App" },
       { img: TDA001, caption: "Aplicación web con múltiples funcionalidades" },
     ],
     text: "Una aplicación web donde que implementa un CRUD, opciones de búsqueda y filtro, y night mode.",
@@ -216,9 +226,9 @@ const proyectos = [
     name: "006: H+ Bot",
     img: proyecto006,
     extraImgs: [
-      { img: proyecto006, caption: null },
+      { img: portada006, caption: "Bot de Twitter - Humanity Plus" },
       { img: HPB001, caption: "Perfil de twitter" },
-      { img: HPB002, caption: null },
+      { img: HPB002, caption: "Algunos ejemplos de publicaciones" },
     ],
     text: "Un bot de twitter que sigue a pensadores y asociaciones transhumanistas y twitea sobre asuntos relacionados con el futuro.",
     quote: (
@@ -254,8 +264,8 @@ const proyectos = [
     name: "007: Dungeon of the Silver Key",
     img: proyecto007,
     extraImgs: [
-      { img: proyecto007, caption: null },
-      { img: DSK001, caption: null },
+      { img: portada007, caption: "Dungeon of the Silver Key" },
+      { img: DSK001, caption: "Título del juego" },
       { img: DSK002, caption: "Combate contra enemigos." },
       { img: DSK003, caption: "Incluye un sistema de mapeo e inventario." },
     ],
