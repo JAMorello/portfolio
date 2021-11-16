@@ -33,7 +33,7 @@ const ModalProyecto = ({ curProyecto, showModal, setShowModal }) => {
       {showModal ? (
         <>
           <div className="fixed flex justify-center items-center inset-0 z-50">
-            <div className="relative w-full max-w-3xl my-6 mx-auto ">
+            <div className="relative w-full sm:max-w-2xl max-w-3xl my-6 mx-auto ">
               {/*content*/}
               <div className="relative flex flex-col w-full bg-blue-100 rounded-lg shadow-lg">
                 {/*header*/}
