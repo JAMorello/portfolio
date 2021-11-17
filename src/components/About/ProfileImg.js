@@ -1,4 +1,4 @@
-import profile from "../assets/profile.jpg";
+import profile from "../../assets/profile.jpg";
 import Flip from "react-reveal/Flip";
 
 const ProfileImg = () => {

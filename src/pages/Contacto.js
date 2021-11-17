@@ -1,9 +1,9 @@
-import React from "react";
-
 function Contacto() {
   return (
-    <div>
-      <p></p>
+    <div className="flex flex-col justify-center items-center my-10 ">
+      <h2 className="text-3xl sm:text-5xl font-bold text-white uppercase underline text-right mb-5">
+        Contacto
+      </h2>
     </div>
   );
 }

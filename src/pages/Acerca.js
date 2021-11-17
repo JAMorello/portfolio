@@ -1,5 +1,5 @@
-import Conocimientos from "../components/Conocimientos";
-import ProfileCard from "../components/ProfileCard";
+import Conocimientos from "../components/Skills/Conocimientos";
+import ProfileCard from "../components/About/ProfileCard";
 
 function Acerca() {
   return (

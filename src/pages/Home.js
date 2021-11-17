@@ -1,6 +1,6 @@
-import TypedText from "../components/TypedText";
-import BotonCV from "../components/BotonCV";
-import Avatar from "../components/Avatar";
+import TypedText from "../components/Home/TypedText";
+import BotonCV from "../components/Home/BotonCV";
+import Avatar from "../components/Home/Avatar";
 import Flip from "react-reveal/Flip";
 
 function Home() {

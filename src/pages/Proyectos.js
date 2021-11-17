@@ -1,7 +1,7 @@
 import { useState } from "react";
 import proyectos from "../proyectos/proyectos";
-import ProyectoCard from "../components/ProyectoCard";
-import ModalProyecto from "../components/ModalProyecto";
+import ProyectoCard from "../components/Projects/ProyectoCard";
+import ModalProyecto from "../components/Projects/ModalProyecto";
 
 const Proyectos = () => {
   const [curProyecto, setCurProyecto] = useState(proyectos[0]);

@@ -1,4 +1,4 @@
-import CV from "../assets/morello-juan-agustin-cv.pdf";
+import CV from "../../assets/morello-juan-agustin-cv.pdf";
 import FileIcon from "./FileIcon";
 
 function BotonCV() {

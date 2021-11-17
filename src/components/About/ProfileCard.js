@@ -1,8 +1,8 @@
 import { useState } from "react";
-import ProfileImg from "../components/ProfileImg";
-import BotonTextos from "../components/BotonTextos";
-import TextoProgramador from "../components/TextoProgramador";
-import TextoFilosofo from "../components/TextoFilosofo";
+import ProfileImg from "./ProfileImg";
+import BotonTextos from "./BotonTextos";
+import TextoProgramador from "./TextoProgramador";
+import TextoFilosofo from "./TextoFilosofo";
 
 const ProfileCard = () => {
   const [showProg, setShowProg] = useState(true);

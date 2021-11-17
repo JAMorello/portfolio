@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import BgParticles from "./components/BgParticles";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
 import Acerca from "./pages/Acerca";
 import Proyectos from "./pages/Proyectos";
 import Contacto from "./pages/Contacto";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
