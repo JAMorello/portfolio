@@ -3,7 +3,7 @@ import { FaWindowClose } from "react-icons/fa";
 import TechBadge from "./TechBadge";
 import ProyectSlider from "./ProyectSlider";
 
-const ModalProyecto = ({ curProyecto, showModal, setShowModal }) => {
+const ModalProyecto = ({ curProyecto, showModal, handleToogleModal }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleResize = (e) => {
@@ -32,7 +32,7 @@ const ModalProyecto = ({ curProyecto, showModal, setShowModal }) => {
     <>
       {showModal ? (
         <>
-          <div className="fixed flex justify-center items-center inset-0 z-50">
+          <div className="fixed flex justify-center items-center inset-0 z-50 ">
             <div className="relative w-full sm:max-w-2xl max-w-3xl my-6 mx-auto ">
               {/*content*/}
               <div className="relative flex flex-col w-full bg-blue-100 rounded-lg shadow-lg">
@@ -41,7 +41,7 @@ const ModalProyecto = ({ curProyecto, showModal, setShowModal }) => {
                   <h3 className="text-xl sm:text-3xl font-semibold">
                     {curProyecto.name}
                   </h3>
-                  <button onClick={() => setShowModal(false)}>
+                  <button onClick={() => handleToogleModal(false)}>
                     <FaWindowClose className="w-8 h-8 text-red-600" />
                   </button>
                 </div>
@@ -55,14 +55,14 @@ const ModalProyecto = ({ curProyecto, showModal, setShowModal }) => {
                     />
                   </div>
 
-                  <div class="flex my-4 gap-2 flex-wrap items-baseline">
+                  <div className="flex my-4 gap-2 flex-wrap items-baseline">
                     {curProyecto.technologies.map((e) => (
-                      <TechBadge tech={e} />
+                      <TechBadge key={e} tech={e} />
                     ))}
                   </div>
-                  <p className="my-4 text-xs sm:text-sm text-justify">
+                  <span className="my-4 text-xs sm:text-sm text-justify">
                     {curProyecto.extendedText}
-                  </p>
+                  </span>
                 </div>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import Flip from "react-reveal/Flip";
 import BotonesProyecto from "./BotonesProyecto";
 
-const ProyectoCard = ({ proyecto, setCurProyecto, setShowModal }) => {
+const ProyectoCard = ({ proyecto, handleToogleModal }) => {
   return (
     <Flip left>
       <div className="w-full sm:w-2/3 md:w-2/5 lg:w-1/3 bg-transparent antialiased text-gray-900 rounded-lg">
@@ -11,7 +11,7 @@ const ProyectoCard = ({ proyecto, setCurProyecto, setShowModal }) => {
           alt={proyecto.name}
         />
         <div className="relative px-4 -mt-24">
-          <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="mt-1 text-lg lg:text-xl font-semibold uppercase leading-tight ">
               {proyecto.name}
             </h3>
@@ -20,8 +20,7 @@ const ProyectoCard = ({ proyecto, setCurProyecto, setShowModal }) => {
             </p>
             <BotonesProyecto
               proyecto={proyecto}
-              setCurProyecto={setCurProyecto}
-              setShowModal={setShowModal}
+              handleToogleModal={handleToogleModal}
             />
           </div>
         </div>

@@ -1,4 +1,4 @@
-const BotonesProyecto = ({ proyecto, setCurProyecto, setShowModal }) => {
+const BotonesProyecto = ({ proyecto, handleToogleModal }) => {
   const btnStyle =
     "p-2 text-xs font-bold uppercase rounded-lg border-b-2 border-r-2";
   const btnDemo = `${
@@ -34,8 +34,7 @@ const BotonesProyecto = ({ proyecto, setCurProyecto, setShowModal }) => {
       <button
         className={`${btnInfo} ${btnStyle}`}
         onClick={() => {
-          setShowModal(true);
-          setCurProyecto(proyecto);
+          handleToogleModal(true, proyecto);
         }}
       >
         + Info
