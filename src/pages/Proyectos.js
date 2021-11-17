@@ -1,14 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import proyectos from "../proyectos/proyectos";
 import ProyectoCard from "../components/Projects/ProyectoCard";
 import ModalProyecto from "../components/Projects/ModalProyecto";
 
 const Proyectos = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [curProyecto, setCurProyecto] = useState(proyectos[0]);
   const [showModal, setShowModal] = useState(false);
 
+  const handleToogleModal = (bool, proyecto = proyectos[0]) => {
+    setCurProyecto(proyecto);
+    setShowModal(bool);
+
+    const body = document.querySelector("body");
+    if (body.classList.contains("disable-scroll")) {
+      body.classList.remove("disable-scroll");
+    } else {
+      body.classList.add("disable-scroll");
+    }
+  };
+
+  useEffect(() => {}, [showModal]);
+
   return (
-    <div className="flex flex-col justify-center items-center my-10 ">
+    <div className="flex flex-col justify-center items-center my-10">
       <h2 className="text-3xl sm:text-5xl font-bold text-white uppercase underline text-right mb-10">
         Proyectos
       </h2>
@@ -20,14 +38,13 @@ const Proyectos = () => {
           <ProyectoCard
             key={e.name}
             proyecto={e}
-            setCurProyecto={setCurProyecto}
-            setShowModal={setShowModal}
+            handleToogleModal={handleToogleModal}
           />
         ))}
         <ModalProyecto
           curProyecto={curProyecto}
           showModal={showModal}
-          setShowModal={setShowModal}
+          handleToogleModal={handleToogleModal}
         />
       </div>
     </div>
