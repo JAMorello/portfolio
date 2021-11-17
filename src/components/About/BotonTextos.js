@@ -1,7 +1,7 @@
 const BotonTextos = ({ text, active, handleClick }) => {
   return (
     <button
-      className={`p-2 mb-4 z-50 text-base lg:text-xl font-bold text-center text-white rounded-lg border-r-4 border-b-4 ${
+      className={`p-2 mb-4 z-40 text-base lg:text-xl font-bold text-center text-white rounded-lg border-r-4 border-b-4 ${
         active ? "border-4" : ""
       }
       ${

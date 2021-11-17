@@ -4,7 +4,7 @@ const TextoProgramador = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="z-50">
+    <div className="z-40">
       <p className=" text-justify pb-2">
         Comencé a incursionar en el mundo de la programación en el 2017,
         aprendiendo lo más básico a través de Python. La curiosidad me llevó, en
