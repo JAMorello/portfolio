@@ -1,11 +1,22 @@
+import { useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { sendForm } from "./ContactToast";
 import FieldWrapper from "./FieldWrapper";
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("mvodellp");
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
+
+  useEffect(() => {
+    if (state.submitting) {
+      if (state.succeeded) {
+        sendForm(true);
+      }
+      if (state.errors.length !== 0) {
+        sendForm(false);
+      }
+    }
+  }, [state]);
+
   return (
     <form
       onSubmit={handleSubmit}

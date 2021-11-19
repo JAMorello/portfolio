@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
 import Acerca from "./pages/Acerca";
@@ -12,6 +13,7 @@ const App = () => {
 
   return (
     <div style={{ height: "80%" }}>
+      <Toaster />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home setCurrentPage={setCurrentPage} />} />
