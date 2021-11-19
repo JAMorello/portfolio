@@ -3,10 +3,11 @@ import proyectos from "../proyectos/proyectos";
 import ProyectoCard from "../components/Projects/ProyectoCard";
 import ModalProyecto from "../components/Projects/ModalProyecto";
 
-const Proyectos = () => {
+const Proyectos = ({ setCurrentPage }) => {
   useEffect(() => {
+    setCurrentPage("Proyectos");
     window.scrollTo(0, 0);
-  }, []);
+  }, [setCurrentPage]);
 
   const [curProyecto, setCurProyecto] = useState(proyectos[0]);
   const [showModal, setShowModal] = useState(false);

@@ -1,5 +1,5 @@
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import BgParticles from "./components/BgParticles";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
 import Acerca from "./pages/Acerca";
@@ -8,17 +8,27 @@ import Contacto from "./pages/Contacto";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
+  const [currentPage, setCurrentPage] = useState("");
+
   return (
     <div style={{ height: "80%" }}>
       <Navbar />
-      <BgParticles />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/acerca" element={<Acerca />} />
-        <Route path="/proyectos" element={<Proyectos />} />
-        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/" element={<Home setCurrentPage={setCurrentPage} />} />
+        <Route
+          path="/acerca"
+          element={<Acerca setCurrentPage={setCurrentPage} />}
+        />
+        <Route
+          path="/proyectos"
+          element={<Proyectos setCurrentPage={setCurrentPage} />}
+        />
+        <Route
+          path="/contacto"
+          element={<Contacto setCurrentPage={setCurrentPage} />}
+        />
       </Routes>
-      <Footer />
+      <Footer currentPage={currentPage} />
     </div>
   );
 };

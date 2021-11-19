@@ -2,10 +2,11 @@ import { useEffect } from "react";
 import Conocimientos from "../components/Skills/Conocimientos";
 import ProfileCard from "../components/About/ProfileCard";
 
-function Acerca() {
+const Acerca = ({ setCurrentPage }) => {
   useEffect(() => {
+    setCurrentPage("Acerca");
     window.scrollTo(0, 0);
-  }, []);
+  }, [setCurrentPage]);
 
   return (
     <div className="flex flex-col justify-center items-center my-10 ">
@@ -16,6 +17,6 @@ function Acerca() {
       <ProfileCard />
     </div>
   );
-}
+};
 
 export default Acerca;
