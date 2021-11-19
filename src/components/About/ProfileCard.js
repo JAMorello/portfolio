@@ -26,7 +26,7 @@ const ProfileCard = () => {
           Mi recorrido como...
         </p>
         <div className="flex flex-col pl-0 px-0 sm:px-2 md:pl-6 mt-5 md:mt-0">
-          <div className="grid grid-cols-2 gap-x-4">
+          <div className="grid grid-cols-2 gap-x-4 z-30">
             <BotonTextos
               text="Programador"
               active={showProg}

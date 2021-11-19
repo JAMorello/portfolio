@@ -36,14 +36,14 @@ const TextoProgramador = () => {
           proyecto desafiante.
         </p>
       </div>
-      <button
-        className="text-blue-500 font-bold z-10"
-        onClick={() => setShowMore(!showMore)}
-      >
-        <p className="text-right">
-          {showMore ? "Leer menos..." : "Leer más..."}
-        </p>
-      </button>
+      <div className="flex justify-center sm:justify-start ">
+        <button
+          className="text-blue-500 font-bold z-30"
+          onClick={() => setShowMore(!showMore)}
+        >
+          <p>{showMore ? "Leer menos..." : "Leer más..."}</p>
+        </button>
+      </div>
     </div>
   );
 };
