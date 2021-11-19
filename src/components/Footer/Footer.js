@@ -6,7 +6,7 @@ const Footer = ({ currentPage }) => {
     <div
       className={`${
         currentPage === "Contacto" ? "hidden" : "flex"
-      } ml-5 px-3 pb-2  gap-5`}
+      } ml-0 sm:ml-5 px-3 pb-0 sm:pb-2 gap-5 fixed sm:static bottom-5 left-5`}
     >
       <GithubButton />
       <LinkedinButton />

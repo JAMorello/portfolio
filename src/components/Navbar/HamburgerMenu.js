@@ -20,7 +20,7 @@ const HamburgerMenu = () => {
     <div>
       <div className={`${toggleMenu ? "hidden" : "block"}`}>
         <button
-          className="fixed bottom-4 right-4 bg-yellow-400 text-yellow-700 border-2 border-yellow-700 rounded-full h-12 w-12 flex items-center justify-center z-50"
+          className="fixed bottom-5 right-5 bg-yellow-400 text-yellow-700 border-2 border-yellow-700 rounded-full h-12 w-12 flex items-center justify-center z-50"
           onClick={handleClick}
         >
           <GiHamburgerMenu className="h-8 w-8" />
