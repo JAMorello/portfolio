@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Navbar from "./components/Navbar/Navbar";
@@ -10,6 +10,13 @@ import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState("");
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handleResize = (e) => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => window.addEventListener("resize", handleResize));
 
   return (
     <div style={{ height: "80%" }}>
@@ -23,7 +30,12 @@ const App = () => {
         />
         <Route
           path="/proyectos"
-          element={<Proyectos setCurrentPage={setCurrentPage} />}
+          element={
+            <Proyectos
+              windowWidth={windowWidth}
+              setCurrentPage={setCurrentPage}
+            />
+          }
         />
         <Route
           path="/contacto"

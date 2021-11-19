@@ -3,7 +3,7 @@ import proyectos from "../proyectos/proyectos";
 import ProyectoCard from "../components/Projects/ProyectoCard";
 import ModalProyecto from "../components/Projects/ModalProyecto";
 
-const Proyectos = ({ setCurrentPage }) => {
+const Proyectos = ({ windowWidth, setCurrentPage }) => {
   useEffect(() => {
     setCurrentPage("Proyectos");
     window.scrollTo(0, 0);
@@ -43,6 +43,7 @@ const Proyectos = ({ setCurrentPage }) => {
           />
         ))}
         <ModalProyecto
+          windowWidth={windowWidth}
           curProyecto={curProyecto}
           showModal={showModal}
           handleToogleModal={handleToogleModal}

@@ -3,15 +3,12 @@ import { FaWindowClose } from "react-icons/fa";
 import TechBadge from "./TechBadge";
 import ProyectSlider from "./ProyectSlider";
 
-const ModalProyecto = ({ curProyecto, showModal, handleToogleModal }) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  const handleResize = (e) => {
-    setWindowWidth(window.innerWidth);
-  };
-
-  useEffect(() => window.addEventListener("resize", handleResize));
-
+const ModalProyecto = ({
+  windowWidth,
+  curProyecto,
+  showModal,
+  handleToogleModal,
+}) => {
   const [sliderWidth, setSliderWidth] = useState("300px");
 
   useEffect(() => {
