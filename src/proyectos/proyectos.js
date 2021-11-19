@@ -38,7 +38,7 @@ const proyectos = [
       { img: SHA003, caption: "Carta y detalle de los miembros del equipo" },
     ],
     quote: null,
-    text: "Una aplicación web aplicación web responsive para armar un equipo de superheroes. Se hace validación de formularios, peticiones HTTP a API, etc. Para Alkemy Labs (Arg.).",
+    text: "Una aplicación web responsive para armar un equipo de superheroes. Se hace validación de formularios, peticiones HTTP a API, etc. Para Alkemy Labs (Arg.).",
     extendedText: (
       <p>
         Este proyecto fue creado para el desafío React de{" "}
